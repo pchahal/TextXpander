@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B91F7431DFF3DF2002AE8CE /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B91F7401DFF3DF2002AE8CE /* EventManager.swift */; };
+		4B91F7441DFF3DF2002AE8CE /* KeyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B91F7411DFF3DF2002AE8CE /* KeyCode.swift */; };
+		4B91F7451DFF3DF2002AE8CE /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B91F7421DFF3DF2002AE8CE /* Logger.swift */; };
+		4BCE0BD51DFF2DF800562255 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCE0BD41DFF2DF800562255 /* AppDelegate.swift */; };
+		4BCE0BD71DFF2DF800562255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BCE0BD61DFF2DF800562255 /* Assets.xcassets */; };
+		4BCE0BDA1DFF2DF800562255 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BCE0BD81DFF2DF800562255 /* MainMenu.xib */; };
+		EE9B0866E4AE76F558376ECC /* Pods_TextXpander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB462AF50B7130B7341DC56 /* Pods_TextXpander.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0AB462AF50B7130B7341DC56 /* Pods_TextXpander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextXpander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B91F7401DFF3DF2002AE8CE /* EventManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
+		4B91F7411DFF3DF2002AE8CE /* KeyCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyCode.swift; sourceTree = "<group>"; };
+		4B91F7421DFF3DF2002AE8CE /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		4BCE0BD11DFF2DF800562255 /* TextXpander.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextXpander.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BCE0BD41DFF2DF800562255 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4BCE0BD61DFF2DF800562255 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4BCE0BD91DFF2DF800562255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4BCE0BDB1DFF2DF800562255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DACF8F707AEB90B0DAA5EE85 /* Pods-TextXpander.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextXpander.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextXpander/Pods-TextXpander.debug.xcconfig"; sourceTree = "<group>"; };
+		F26187561AB6E33309212FC0 /* Pods-TextXpander.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextXpander.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextXpander/Pods-TextXpander.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BCE0BCE1DFF2DF800562255 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE9B0866E4AE76F558376ECC /* Pods_TextXpander.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BCE0BC81DFF2DF800562255 = {
+			isa = PBXGroup;
+			children = (
+				4BCE0BD31DFF2DF800562255 /* TextXpander */,
+				4BCE0BD21DFF2DF800562255 /* Products */,
+				E15F78E31AF2CDDFD6BBCDF6 /* Pods */,
+				6CB262DF7FCDD5EC39773283 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4BCE0BD21DFF2DF800562255 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BCE0BD11DFF2DF800562255 /* TextXpander.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BCE0BD31DFF2DF800562255 /* TextXpander */ = {
+			isa = PBXGroup;
+			children = (
+				4BCE0BD41DFF2DF800562255 /* AppDelegate.swift */,
+				4BCE0BD61DFF2DF800562255 /* Assets.xcassets */,
+				4BCE0BD81DFF2DF800562255 /* MainMenu.xib */,
+				4B91F7401DFF3DF2002AE8CE /* EventManager.swift */,
+				4B91F7411DFF3DF2002AE8CE /* KeyCode.swift */,
+				4B91F7421DFF3DF2002AE8CE /* Logger.swift */,
+				4BCE0BDB1DFF2DF800562255 /* Info.plist */,
+			);
+			path = TextXpander;
+			sourceTree = "<group>";
+		};
+		6CB262DF7FCDD5EC39773283 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AB462AF50B7130B7341DC56 /* Pods_TextXpander.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E15F78E31AF2CDDFD6BBCDF6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DACF8F707AEB90B0DAA5EE85 /* Pods-TextXpander.debug.xcconfig */,
+				F26187561AB6E33309212FC0 /* Pods-TextXpander.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BCE0BD01DFF2DF800562255 /* TextXpander */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BCE0BDE1DFF2DF800562255 /* Build configuration list for PBXNativeTarget "TextXpander" */;
+			buildPhases = (
+				BDAC661700BA00F0EBFABB1A /* [CP] Check Pods Manifest.lock */,
+				4BCE0BCD1DFF2DF800562255 /* Sources */,
+				4BCE0BCE1DFF2DF800562255 /* Frameworks */,
+				4BCE0BCF1DFF2DF800562255 /* Resources */,
+				4A1D5ACB06C3C5218EF76305 /* [CP] Embed Pods Frameworks */,
+				D16C44132FEC6B08DB05D765 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextXpander;
+			productName = TextXpander;
+			productReference = 4BCE0BD11DFF2DF800562255 /* TextXpander.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BCE0BC91DFF2DF800562255 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Pardeep Chahal";
+				TargetAttributes = {
+					4BCE0BD01DFF2DF800562255 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4BCE0BCC1DFF2DF800562255 /* Build configuration list for PBXProject "TextXpander" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4BCE0BC81DFF2DF800562255;
+			productRefGroup = 4BCE0BD21DFF2DF800562255 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BCE0BD01DFF2DF800562255 /* TextXpander */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BCE0BCF1DFF2DF800562255 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BCE0BD71DFF2DF800562255 /* Assets.xcassets in Resources */,
+				4BCE0BDA1DFF2DF800562255 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A1D5ACB06C3C5218EF76305 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextXpander/Pods-TextXpander-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDAC661700BA00F0EBFABB1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D16C44132FEC6B08DB05D765 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextXpander/Pods-TextXpander-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BCE0BCD1DFF2DF800562255 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B91F7431DFF3DF2002AE8CE /* EventManager.swift in Sources */,
+				4B91F7441DFF3DF2002AE8CE /* KeyCode.swift in Sources */,
+				4BCE0BD51DFF2DF800562255 /* AppDelegate.swift in Sources */,
+				4B91F7451DFF3DF2002AE8CE /* Logger.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4BCE0BD81DFF2DF800562255 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BCE0BD91DFF2DF800562255 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4BCE0BDC1DFF2DF800562255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4BCE0BDD1DFF2DF800562255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		4BCE0BDF1DFF2DF800562255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DACF8F707AEB90B0DAA5EE85 /* Pods-TextXpander.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TextXpander/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pardeepchahal.TextXpander;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4BCE0BE01DFF2DF800562255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F26187561AB6E33309212FC0 /* Pods-TextXpander.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TextXpander/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pardeepchahal.TextXpander;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BCE0BCC1DFF2DF800562255 /* Build configuration list for PBXProject "TextXpander" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BCE0BDC1DFF2DF800562255 /* Debug */,
+				4BCE0BDD1DFF2DF800562255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BCE0BDE1DFF2DF800562255 /* Build configuration list for PBXNativeTarget "TextXpander" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BCE0BDF1DFF2DF800562255 /* Debug */,
+				4BCE0BE01DFF2DF800562255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BCE0BC91DFF2DF800562255 /* Project object */;
+}
