@@ -59,10 +59,14 @@ class TextManager{
         
         Logger.sharedInstance.log.verbose("key=\(key)   curentword=\(currentWord)")
        
-        currentWord += KeyCode.sharedInstance.getUnicodeFromKey(key: key)
+        let keyStr = KeyCode.sharedInstance.getUnicodeFromKey(key: key)
+        if keyStr == " "
+        {
+            currentWord = ""
+            return nil
+        }
         
-        currentWord = "AB"
-        
+        currentWord += keyStr
         if let expansion = expansions[currentWord]
         {
             

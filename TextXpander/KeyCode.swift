@@ -93,6 +93,59 @@ class KeyCode{
         kVK_ANSI_Keypad7: "7",
         kVK_ANSI_Keypad8: "8",
         kVK_ANSI_Keypad9: "9",
-    ]
+        
+        //
+    /* keycodes for keys that are independent of keyboard layout*/
+    
+    //kVK_Return:
+    //kVK_Tab:
+    kVK_Space:  " "
+   /* kVK_Delete:
+    kVK_Escape:  
+    kVK_Command:  
+    kVK_Shift:  
+    kVK_CapsLock:  
+    kVK_Option:  
+    kVK_Control:  
+    kVK_RightCommand:  
+    kVK_RightShift:  
+    kVK_RightOption:  
+    kVK_RightControl:  
+    kVK_Function:  
+    kVK_F17:  
+    kVK_VolumeUp:  
+    kVK_VolumeDown:  
+    kVK_Mute:  
+    kVK_F18:  
+    kVK_F19:  
+    kVK_F20:  
+    kVK_F5:  
+    kVK_F6:  
+    kVK_F7:  
+    kVK_F3:  
+    kVK_F8:  
+    kVK_F9:  
+    kVK_F11:  
+    kVK_F13:  
+    kVK_F16:  
+    kVK_F14:  
+    kVK_F10:  
+    kVK_F12:  
+    kVK_F15:  
+    kVK_Help:  
+    kVK_Home:  
+    kVK_PageUp:  
+    kVK_ForwardDelete:  
+    kVK_F4:  
+    kVK_End:  
+    kVK_F2:  
+    kVK_PageDown:  
+    kVK_F1:  
+    kVK_LeftArrow:  
+    kVK_RightArrow:  
+    kVK_DownArrow:  
+    kVK_UpArrow:  */
+]
+    
 }
 
