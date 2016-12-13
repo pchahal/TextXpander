@@ -38,11 +38,11 @@ class TextManager{
     
     //return empty string if no match
     //par -> pardeep
-    func getTextExpansion(key: Int64,_ length: inout Int) -> UnsafeMutablePointer<UniChar>?
+    func getTextExpansion(key: Int64,_ expansionLength: inout Int, _ shortcutLength: inout Int) -> UnsafeMutablePointer<UniChar>?
     {
 
         
-        Logger.sharedInstance.log.verbose("key=\(key)   curentword=\(currentWord)")
+        
        
         let keyStr = KeyCode.sharedInstance.getUnicodeFromKey(key: key)
         if keyStr == " "
@@ -62,11 +62,11 @@ class TextManager{
         {
             currentWord = ""
             AudioManager.sharedInstance.playSound()
-            Logger.sharedInstance.log.verbose("expansion=\(expansion)")
+            Logger.sharedInstance.log.verbose("key=\(key)  curentword=\(currentWord) expansion=\(expansion)  expansionLength=\(expansionLength)    shortcutLength=\(shortcutLength)")
 
            let array: [UInt16] = Array(expansion.utf16)
-            length = array.count
-            var aStr = UnsafeMutablePointer<UniChar>.allocate(capacity: length)
+            expansionLength = array.count
+            var aStr = UnsafeMutablePointer<UniChar>.allocate(capacity: expansionLength)
           
             for character in array
             {
@@ -77,15 +77,15 @@ class TextManager{
             
            aStr =  aStr.advanced(by: -array.count)
             
+            shortcutLength = currentWord.characters.count
              return aStr
            
         }
         
         else
         {
-          
             return nil
-            }
+        }
         
     }
     
