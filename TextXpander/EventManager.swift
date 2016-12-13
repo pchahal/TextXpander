@@ -1,8 +1,18 @@
 import Foundation
 
+/*  TODO
+ 
 
 
-
+ after succesful expansion send tapevent backspace*LengthOfExpansion
+ bug Tab and arrow key is expanding
+ 
+ 
+ 
+ 
+ 
+ 
+*/
 
 
 
@@ -23,6 +33,9 @@ class TextManager{
     
     
     
+    
+
+    
     //return empty string if no match
     //par -> pardeep
     func getTextExpansion(key: Int64,_ length: inout Int) -> UnsafeMutablePointer<UniChar>?
@@ -37,11 +50,18 @@ class TextManager{
             currentWord = ""
             return nil
         }
+        if keyStr == "del" && currentWord.characters.count > 0
+        {
+            currentWord.remove(at: currentWord.index(before: currentWord.endIndex))
+            return nil
+        }
+        
         
         currentWord += keyStr
         if let expansion = expansions[currentWord]
         {
-            
+            currentWord = ""
+            AudioManager.sharedInstance.playSound()
             Logger.sharedInstance.log.verbose("expansion=\(expansion)")
 
            let array: [UInt16] = Array(expansion.utf16)
@@ -56,6 +76,7 @@ class TextManager{
             }
             
            aStr =  aStr.advanced(by: -array.count)
+            
              return aStr
            
         }

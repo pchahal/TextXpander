@@ -99,9 +99,9 @@ class KeyCode{
     
     //kVK_Return:
     //kVK_Tab:
-    kVK_Space:  " "
-   /* kVK_Delete:
-    kVK_Escape:  
+    kVK_Space:  " ",
+    kVK_Delete: "del",
+   /* kVK_Escape:
     kVK_Command:  
     kVK_Shift:  
     kVK_CapsLock:  
@@ -128,7 +128,7 @@ class KeyCode{
     kVK_F11:  
     kVK_F13:  
     kVK_F16:  
-    kVK_F14:  
+    kVK_F14:
     kVK_F10:  
     kVK_F12:  
     kVK_F15:  

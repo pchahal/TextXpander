@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4B1B3BF51DFF780100A91981 /* TextXpanderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B3BF41DFF780100A91981 /* TextXpanderTests.swift */; };
+		4B8A976E1E009E83008207B5 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 4B8A976D1E009E83008207B5 /* Sounds */; };
 		4B91F7431DFF3DF2002AE8CE /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B91F7401DFF3DF2002AE8CE /* EventManager.swift */; };
 		4B91F7441DFF3DF2002AE8CE /* KeyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B91F7411DFF3DF2002AE8CE /* KeyCode.swift */; };
 		4B91F7451DFF3DF2002AE8CE /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B91F7421DFF3DF2002AE8CE /* Logger.swift */; };
+		4BBB701F1E008A6600E32B2B /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB701E1E008A6600E32B2B /* AudioManager.swift */; };
 		4BCE0BD51DFF2DF800562255 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCE0BD41DFF2DF800562255 /* AppDelegate.swift */; };
 		4BCE0BD71DFF2DF800562255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BCE0BD61DFF2DF800562255 /* Assets.xcassets */; };
 		4BCE0BDA1DFF2DF800562255 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BCE0BD81DFF2DF800562255 /* MainMenu.xib */; };
@@ -32,9 +34,11 @@
 		4B1B3BF21DFF780100A91981 /* TextXpanderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextXpanderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B1B3BF41DFF780100A91981 /* TextXpanderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextXpanderTests.swift; sourceTree = "<group>"; };
 		4B1B3BF61DFF780100A91981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B8A976D1E009E83008207B5 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 		4B91F7401DFF3DF2002AE8CE /* EventManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
 		4B91F7411DFF3DF2002AE8CE /* KeyCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyCode.swift; sourceTree = "<group>"; };
 		4B91F7421DFF3DF2002AE8CE /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		4BBB701E1E008A6600E32B2B /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		4BCE0BD11DFF2DF800562255 /* TextXpander.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextXpander.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BCE0BD41DFF2DF800562255 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BCE0BD61DFF2DF800562255 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,9 +103,11 @@
 				4BCE0BD61DFF2DF800562255 /* Assets.xcassets */,
 				4BCE0BD81DFF2DF800562255 /* MainMenu.xib */,
 				4B91F7401DFF3DF2002AE8CE /* EventManager.swift */,
+				4B8A976D1E009E83008207B5 /* Sounds */,
 				4B91F7411DFF3DF2002AE8CE /* KeyCode.swift */,
 				4B91F7421DFF3DF2002AE8CE /* Logger.swift */,
 				4BCE0BDB1DFF2DF800562255 /* Info.plist */,
+				4BBB701E1E008A6600E32B2B /* AudioManager.swift */,
 			);
 			path = TextXpander;
 			sourceTree = "<group>";
@@ -216,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B8A976E1E009E83008207B5 /* Sounds in Resources */,
 				4BCE0BD71DFF2DF800562255 /* Assets.xcassets in Resources */,
 				4BCE0BDA1DFF2DF800562255 /* MainMenu.xib in Resources */,
 			);
@@ -287,6 +294,7 @@
 				4B91F7431DFF3DF2002AE8CE /* EventManager.swift in Sources */,
 				4B91F7441DFF3DF2002AE8CE /* KeyCode.swift in Sources */,
 				4BCE0BD51DFF2DF800562255 /* AppDelegate.swift in Sources */,
+				4BBB701F1E008A6600E32B2B /* AudioManager.swift in Sources */,
 				4B91F7451DFF3DF2002AE8CE /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,6 +477,7 @@
 				4B1B3BFA1DFF780100A91981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4BCE0BCC1DFF2DF800562255 /* Build configuration list for PBXProject "TextXpander" */ = {
 			isa = XCConfigurationList;
