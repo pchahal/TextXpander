@@ -39,7 +39,7 @@ class TextManager{
     
     static let sharedInstance = TextManager()
     
-    let expansions = ["AB":"BA","par":"pardeep", "cha":"chahal", "email":"pschahal@msn.com","thx":"Thank You", "ABC":"CBA"]
+    let expansions = ["AB":"BA","PAR":"pardeep", "cha":"chahal", "email":"pschahal@msn.com","thx":"Thank You", "ABC":"CBA"]
     var currentWord: String
     
     
