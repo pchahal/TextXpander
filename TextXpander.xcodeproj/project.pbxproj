@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B1B3BF51DFF780100A91981 /* TextXpanderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B3BF41DFF780100A91981 /* TextXpanderTests.swift */; };
 		4B91F7431DFF3DF2002AE8CE /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B91F7401DFF3DF2002AE8CE /* EventManager.swift */; };
 		4B91F7441DFF3DF2002AE8CE /* KeyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B91F7411DFF3DF2002AE8CE /* KeyCode.swift */; };
 		4B91F7451DFF3DF2002AE8CE /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B91F7421DFF3DF2002AE8CE /* Logger.swift */; };
@@ -16,8 +17,21 @@
 		EE9B0866E4AE76F558376ECC /* Pods_TextXpander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB462AF50B7130B7341DC56 /* Pods_TextXpander.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4B1B3BF71DFF780100A91981 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BCE0BC91DFF2DF800562255 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BCE0BD01DFF2DF800562255;
+			remoteInfo = TextXpander;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		0AB462AF50B7130B7341DC56 /* Pods_TextXpander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextXpander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B1B3BF21DFF780100A91981 /* TextXpanderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextXpanderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B1B3BF41DFF780100A91981 /* TextXpanderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextXpanderTests.swift; sourceTree = "<group>"; };
+		4B1B3BF61DFF780100A91981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B91F7401DFF3DF2002AE8CE /* EventManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
 		4B91F7411DFF3DF2002AE8CE /* KeyCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyCode.swift; sourceTree = "<group>"; };
 		4B91F7421DFF3DF2002AE8CE /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
@@ -31,6 +45,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4B1B3BEF1DFF780100A91981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4BCE0BCE1DFF2DF800562255 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -42,10 +63,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B1B3BF31DFF780100A91981 /* TextXpanderTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B1B3BF41DFF780100A91981 /* TextXpanderTests.swift */,
+				4B1B3BF61DFF780100A91981 /* Info.plist */,
+			);
+			path = TextXpanderTests;
+			sourceTree = "<group>";
+		};
 		4BCE0BC81DFF2DF800562255 = {
 			isa = PBXGroup;
 			children = (
 				4BCE0BD31DFF2DF800562255 /* TextXpander */,
+				4B1B3BF31DFF780100A91981 /* TextXpanderTests */,
 				4BCE0BD21DFF2DF800562255 /* Products */,
 				E15F78E31AF2CDDFD6BBCDF6 /* Pods */,
 				6CB262DF7FCDD5EC39773283 /* Frameworks */,
@@ -56,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				4BCE0BD11DFF2DF800562255 /* TextXpander.app */,
+				4B1B3BF21DFF780100A91981 /* TextXpanderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +126,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4B1B3BF11DFF780100A91981 /* TextXpanderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B1B3BFB1DFF780100A91981 /* Build configuration list for PBXNativeTarget "TextXpanderTests" */;
+			buildPhases = (
+				4B1B3BEE1DFF780100A91981 /* Sources */,
+				4B1B3BEF1DFF780100A91981 /* Frameworks */,
+				4B1B3BF01DFF780100A91981 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B1B3BF81DFF780100A91981 /* PBXTargetDependency */,
+			);
+			name = TextXpanderTests;
+			productName = TextXpanderTests;
+			productReference = 4B1B3BF21DFF780100A91981 /* TextXpanderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4BCE0BD01DFF2DF800562255 /* TextXpander */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BCE0BDE1DFF2DF800562255 /* Build configuration list for PBXNativeTarget "TextXpander" */;
@@ -124,6 +174,11 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Pardeep Chahal";
 				TargetAttributes = {
+					4B1B3BF11DFF780100A91981 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4BCE0BD01DFF2DF800562255;
+					};
 					4BCE0BD01DFF2DF800562255 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
@@ -144,11 +199,19 @@
 			projectRoot = "";
 			targets = (
 				4BCE0BD01DFF2DF800562255 /* TextXpander */,
+				4B1B3BF11DFF780100A91981 /* TextXpanderTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4B1B3BF01DFF780100A91981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4BCE0BCF1DFF2DF800562255 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -209,6 +272,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4B1B3BEE1DFF780100A91981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B1B3BF51DFF780100A91981 /* TextXpanderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4BCE0BCD1DFF2DF800562255 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,6 +293,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4B1B3BF81DFF780100A91981 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BCE0BD01DFF2DF800562255 /* TextXpander */;
+			targetProxy = 4B1B3BF71DFF780100A91981 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		4BCE0BD81DFF2DF800562255 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
@@ -234,6 +313,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4B1B3BF91DFF780100A91981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TextXpanderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pardeepchahal.TextXpanderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextXpander.app/Contents/MacOS/TextXpander";
+			};
+			name = Debug;
+		};
+		4B1B3BFA1DFF780100A91981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TextXpanderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pardeepchahal.TextXpanderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextXpander.app/Contents/MacOS/TextXpander";
+			};
+			name = Release;
+		};
 		4BCE0BDC1DFF2DF800562255 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -355,6 +462,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4B1B3BFB1DFF780100A91981 /* Build configuration list for PBXNativeTarget "TextXpanderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B1B3BF91DFF780100A91981 /* Debug */,
+				4B1B3BFA1DFF780100A91981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		4BCE0BCC1DFF2DF800562255 /* Build configuration list for PBXProject "TextXpander" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
