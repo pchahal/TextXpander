@@ -32,8 +32,7 @@ class TextManager{
     
     
     
-    
-    
+
 
     
     //return empty string if no match
@@ -42,7 +41,7 @@ class TextManager{
     {
 
         
-        
+         Logger.sharedInstance.log.verbose("key=\(key)")
        
         let keyStr = KeyCode.sharedInstance.getUnicodeFromKey(key: key)
         if keyStr == " "
@@ -60,12 +59,14 @@ class TextManager{
         currentWord += keyStr
         if let expansion = expansions[currentWord]
         {
-            currentWord = ""
             AudioManager.sharedInstance.playSound()
-            Logger.sharedInstance.log.verbose("key=\(key)  curentword=\(currentWord) expansion=\(expansion)  expansionLength=\(expansionLength)    shortcutLength=\(shortcutLength)")
-
-           let array: [UInt16] = Array(expansion.utf16)
+            let array: [UInt16] = Array(expansion.utf16)
+            shortcutLength = currentWord.characters.count
             expansionLength = array.count
+            
+            Logger.sharedInstance.log.verbose("key=\(key)  curentword=\(currentWord) expansion=\(expansion)  expansionLength=\(expansionLength)    shortcutLength=\(shortcutLength)")
+        
+            
             var aStr = UnsafeMutablePointer<UniChar>.allocate(capacity: expansionLength)
           
             for character in array
@@ -77,7 +78,14 @@ class TextManager{
             
            aStr =  aStr.advanced(by: -array.count)
             
-            shortcutLength = currentWord.characters.count
+            
+            currentWord = ""
+            
+            
+           
+            
+           
+            
              return aStr
            
         }

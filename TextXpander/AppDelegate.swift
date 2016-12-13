@@ -46,7 +46,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 }
 
-aBA
+
+ 
 
 
 func myCGEventCallback(proxy: CGEventTapProxy, type: CGEventType, event: CGEvent, refcon: UnsafeMutableRawPointer?) -> Unmanaged<CGEvent>? {
@@ -59,13 +60,21 @@ func myCGEventCallback(proxy: CGEventTapProxy, type: CGEventType, event: CGEvent
         var shortcutLength = 0
         if let aStr = TextManager.sharedInstance.getTextExpansion(key: keyCode,&expansionLength, &shortcutLength)
         {
+            
+            //del shortcut number of characters,   example email->john@mail.com,  need to delete 5chars
+            //for _ in 1...2 {
+            let kv = CGEvent.init(keyboardEventSource: nil, virtualKey: 51, keyDown: true)
+            kv!.tapPostEvent(proxy)
+            //   }
+
+            
+            
             let k = CGEvent.init(keyboardEventSource: nil, virtualKey: 0, keyDown: true)
             k!.keyboardSetUnicodeString(stringLength: expansionLength, unicodeString: aStr)
             k!.tapPostEvent(proxy)
             
             
-            //del shortcut number of characters,   example email->john@mail.com,  need to delete 5chars
-         
+           
             
             
             return nil

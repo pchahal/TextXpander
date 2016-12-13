@@ -31,8 +31,9 @@ class TextXpanderTests: XCTestCase {
         aStr.initialize(to: 66)
         
         var length = 0
-        var expansion = TextManager.sharedInstance.getTextExpansion(key: 65, &length )
-        expansion = TextManager.sharedInstance.getTextExpansion(key: 66, &length )
+        var shortcut = 0
+        var expansion = TextManager.sharedInstance.getTextExpansion(key: 65, &length , &shortcut)
+        expansion = TextManager.sharedInstance.getTextExpansion(key: 66, &length , &shortcut)
 
         
         
