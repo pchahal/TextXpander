@@ -76,6 +76,17 @@
 			path = TextXpanderTests;
 			sourceTree = "<group>";
 		};
+		4B8A97751E00EB7D008207B5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4BCE0BD61DFF2DF800562255 /* Assets.xcassets */,
+				4BCE0BD81DFF2DF800562255 /* MainMenu.xib */,
+				4BCE0BDB1DFF2DF800562255 /* Info.plist */,
+				4B8A976D1E009E83008207B5 /* Sounds */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		4BCE0BC81DFF2DF800562255 = {
 			isa = PBXGroup;
 			children = (
@@ -99,14 +110,11 @@
 		4BCE0BD31DFF2DF800562255 /* TextXpander */ = {
 			isa = PBXGroup;
 			children = (
+				4B8A97751E00EB7D008207B5 /* Resources */,
 				4BCE0BD41DFF2DF800562255 /* AppDelegate.swift */,
-				4BCE0BD61DFF2DF800562255 /* Assets.xcassets */,
-				4BCE0BD81DFF2DF800562255 /* MainMenu.xib */,
 				4B91F7401DFF3DF2002AE8CE /* EventManager.swift */,
-				4B8A976D1E009E83008207B5 /* Sounds */,
 				4B91F7411DFF3DF2002AE8CE /* KeyCode.swift */,
 				4B91F7421DFF3DF2002AE8CE /* Logger.swift */,
-				4BCE0BDB1DFF2DF800562255 /* Info.plist */,
 				4BBB701E1E008A6600E32B2B /* AudioManager.swift */,
 			);
 			path = TextXpander;

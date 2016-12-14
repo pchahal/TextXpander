@@ -32,14 +32,16 @@ class TextXpanderTests: XCTestCase {
         
         var length = 0
         var shortcut = 0
-        var expansion = TextManager.sharedInstance.getTextExpansion(key: 65, &length , &shortcut)
-        expansion = TextManager.sharedInstance.getTextExpansion(key: 66, &length , &shortcut)
-
+        var flag = CGEventFlags(rawValue: 0)
         
         
         
-        //var str = TextManager.sharedInstance.getTextExpansion(key: 65, &length )
-   
+        var expansion = TextManager.sharedInstance.getTextExpansion(key: 65, modifier: flag, &length , &shortcut)
+        
+        
+        
+        
+        
         XCTAssertTrue(aStr.advanced(by: -1).pointee == 65)
         XCTAssertTrue(aStr.pointee == 66)
         

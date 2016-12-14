@@ -1,10 +1,21 @@
 import Foundation
 
 /*  TODO
- bug Tab and arrow key is expanding
- handle lowercase uppercase
+
+ WED handle modifier keys shift and caps
+ WED handle lowercase uppercase
+ WED bug Tab and arrow key is expanding
  
- 
+ FUTURE 
+ Group Snippets
+ insert time
+ insert date
+ set delimeters
+ update software
+ DMA
+ expansions in select apps
+ iCloud sync
+ image support
  
  
  
@@ -17,7 +28,7 @@ class TextManager{
     
     static let sharedInstance = TextManager()
     
-    let expansions = ["ab":"ba","par":"pardeep", "cha":"chahal", "email":"pschahal@msn.com","thx":"Thank You", "abc":"cba"]
+    let expansions = ["ab":"ba","par":"pardeep", "cha":"chahal", "email":"pschahal@msn.com","thx":"Thank You", "ABC":"cba","A":"B"]
     var currentWord: String
     
     
@@ -33,13 +44,12 @@ class TextManager{
     
     //return empty string if no match
     //par -> pardeep
-    func getTextExpansion(key: Int64,_ expansionLength: inout Int, _ shortcutLength: inout Int) -> UnsafeMutablePointer<UniChar>?
+    func getTextExpansion(key: Int64, modifier: CGEventFlags, _ expansionLength: inout Int, _ shortcutLength: inout Int) -> UnsafeMutablePointer<UniChar>?
     {
 
-        
-        
        
-        let keyStr = KeyCode.sharedInstance.getUnicodeFromKey(key: key)
+       
+        let keyStr = KeyCode.sharedInstance.getUnicodeFromKey(key: key, modifier: modifier)
         if keyStr == " "
         {
             currentWord = ""

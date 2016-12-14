@@ -15,7 +15,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var window: NSWindow!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        HandleKeyPressEvents()
+        
+              //HandleKeyPressEvents()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -51,12 +52,10 @@ func myCGEventCallback(proxy: CGEventTapProxy, type: CGEventType, event: CGEvent
     if [.keyDown , .keyUp].contains(type) {
         
         let keyCode = event.getIntegerValueField(.keyboardEventKeycode)
-        
-        
-
+      
         var expansionLength = 0
         var shortcutLength = 0
-        if let aStr = TextManager.sharedInstance.getTextExpansion(key: keyCode,&expansionLength, &shortcutLength)
+        if let aStr = TextManager.sharedInstance.getTextExpansion(key: keyCode, modifier: event.flags, &expansionLength, &shortcutLength)
         {
             
             //del shortcut number of characters,   example email->john@mail.com,  need to delete 5chars

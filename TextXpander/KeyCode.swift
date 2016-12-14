@@ -13,19 +13,49 @@ import Carbon.HIToolbox
 class KeyCode{
     static let sharedInstance = KeyCode()
     
-    func getUnicodeFromKey(key: Int64) -> String{
+    func getUnicodeFromKey(key: Int64, modifier: CGEventFlags) -> String{
         
-      
+        let shiftModifier = modifier.contains(CGEventFlags.maskShift)
+        let controlModifier = modifier.contains(CGEventFlags.maskControl)
+        let altModifier = modifier.contains(CGEventFlags.maskAlternate)
+        let capsModifier = modifier.contains(CGEventFlags.maskAlphaShift)
+        
+ 
+        
+        Logger.sharedInstance.log.verbose("********** shift=\(shiftModifier) control=\(controlModifier) alt=\(altModifier) caps=\(capsModifier) ")
+
         
         if let code = keyDict[Int(key)]
         {
-            return code
+            if (shiftModifier||capsModifier)
+            {
+                return code.uppercased()
+            }
+            else
+            {
+                return code
+            }
         }
         else
         {
             return ""
         }
     }
+    
+    func isDelKey(key: Int64) -> Bool
+    {
+        
+        if Int(key) == kVK_Delete
+        {
+            return true
+        }
+        else
+        {
+            return false
+        }
+        
+    }
+
 
     let keyDict = [
         kVK_ANSI_A: "a",
