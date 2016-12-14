@@ -1,11 +1,6 @@
 import Foundation
 
 /*  TODO
- 
-
-
- after succesful expansion send tapevent backspace*LengthOfExpansion
- expansion cursor position wrong
  bug Tab and arrow key is expanding
  handle lowercase uppercase
  
