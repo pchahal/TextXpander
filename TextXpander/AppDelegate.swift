@@ -47,7 +47,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 }
 
 
- 
+
 
 
 func myCGEventCallback(proxy: CGEventTapProxy, type: CGEventType, event: CGEvent, refcon: UnsafeMutableRawPointer?) -> Unmanaged<CGEvent>? {
@@ -62,10 +62,11 @@ func myCGEventCallback(proxy: CGEventTapProxy, type: CGEventType, event: CGEvent
         {
             
             //del shortcut number of characters,   example email->john@mail.com,  need to delete 5chars
-            //for _ in 1...2 {
-            let kv = CGEvent.init(keyboardEventSource: nil, virtualKey: 51, keyDown: true)
-            kv!.tapPostEvent(proxy)
-            //   }
+            for _ in 0..<shortcutLength
+            {
+                let kv = CGEvent.init(keyboardEventSource: nil, virtualKey: 51, keyDown: true)
+                kv!.tapPostEvent(proxy)
+            }
 
             
             
