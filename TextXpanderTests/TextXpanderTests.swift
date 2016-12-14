@@ -51,6 +51,17 @@ class TextXpanderTests: XCTestCase {
         
     }
     
+    func testDelKey()
+    {
+        let a =  KeyCode.sharedInstance.isDelKey(key: 51)
+        XCTAssertTrue(a == true)
+    }
+    func testDelimeterKey()
+    {
+        let a =  KeyCode.sharedInstance.isDelimeterKey(key: 49)
+        XCTAssertTrue(a == true)
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

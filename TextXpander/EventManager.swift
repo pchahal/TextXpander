@@ -2,19 +2,28 @@ import Foundation
 
 /*  TODO
 
- WED bug Tab and arrow key is expanding
+ 
  
  FUTURE 
- Group Snippets
+ 
+ json file for snippets
+ nsuserdefaults for prefs
  insert time
  insert date
  set delimeters
+ Group Snippets
+ kctranslatekey
  update software
- DMA
+ 
+ VERSION 2.O
+ sort snippets
+ filter snippets
+ drm
  expansions in select apps
  iCloud sync
  image support
- 
+ emoji
+ dictation
  
  
 */
@@ -48,20 +57,21 @@ class TextManager{
        
        
         let keyStr = KeyCode.sharedInstance.getUnicodeFromKey(key: key, modifier: modifier)
-        if keyStr == " "
+        currentWord += keyStr
+        Logger.sharedInstance.log.verbose("key=\(key) curentword=\(currentWord)")
+
+        if KeyCode.sharedInstance.isDelimeterKey(key: key)
         {
             currentWord = ""
             return nil
         }
-        if keyStr == "del" && currentWord.characters.count > 0
+        if KeyCode.sharedInstance.isDelKey(key: key) && currentWord.characters.count > 0
         {
             currentWord.remove(at: currentWord.index(before: currentWord.endIndex))
             return nil
         }
         
         
-        currentWord += keyStr
-        Logger.sharedInstance.log.verbose("key=\(key) curentword=\(currentWord)")
         
         if let expansion = expansions[currentWord]
         {

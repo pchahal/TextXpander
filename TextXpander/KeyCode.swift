@@ -44,7 +44,6 @@ class KeyCode{
     
     func isDelKey(key: Int64) -> Bool
     {
-        
         if Int(key) == kVK_Delete
         {
             return true
@@ -53,7 +52,18 @@ class KeyCode{
         {
             return false
         }
-        
+    }
+    
+    func isDelimeterKey(key: Int64) -> Bool
+    {
+        if Int(key) == kVK_Space
+        {
+            return true
+        }
+        else
+        {
+            return false
+        }
     }
 
 
