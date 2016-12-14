@@ -62,8 +62,7 @@ func myCGEventCallback(proxy: CGEventTapProxy, type: CGEventType, event: CGEvent
             for _ in 0..<shortcutLength-1
             {
                 let kv = CGEvent.init(keyboardEventSource: nil, virtualKey: 51, keyDown: true)
-                kv!.tapPostEvent(proxy)
-                Logger.sharedInstance.log.verbose("**********key=\(keyCode) ")
+                kv!.tapPostEvent(proxy)               
             }
        
             let k = CGEvent.init(keyboardEventSource: nil, virtualKey: 0, keyDown: true)

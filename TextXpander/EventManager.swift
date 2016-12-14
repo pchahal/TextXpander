@@ -24,11 +24,7 @@ import Foundation
  image support
  emoji
  dictation
- 
- 
 */
-
-
 
 
 class TextManager{
@@ -45,33 +41,27 @@ class TextManager{
     }
     
     
-    
-
-
-    
-    //return empty string if no match
-    //par -> pardeep
     func getTextExpansion(key: Int64, modifier: CGEventFlags, _ expansionLength: inout Int, _ shortcutLength: inout Int) -> UnsafeMutablePointer<UniChar>?
     {
-
-       
-       
-        let keyStr = KeyCode.sharedInstance.getUnicodeFromKey(key: key, modifier: modifier)
+    let keyStr = KeyCode.sharedInstance.getUnicodeFromKey(key: key, modifier: modifier)
         currentWord += keyStr
-        Logger.sharedInstance.log.verbose("key=\(key) curentword=\(currentWord)")
-
+        
         if KeyCode.sharedInstance.isDelimeterKey(key: key)
         {
             currentWord = ""
+            Logger.sharedInstance.log.verbose("key=\(key) curentword=\(currentWord)")
             return nil
         }
-        if KeyCode.sharedInstance.isDelKey(key: key) && currentWord.characters.count > 0
+        else if KeyCode.sharedInstance.isDelKey(key: key) && currentWord.characters.count > 0
         {
             currentWord.remove(at: currentWord.index(before: currentWord.endIndex))
+            Logger.sharedInstance.log.verbose("key=\(key) curentword=\(currentWord)")
+
             return nil
         }
-        
-        
+        else{
+            Logger.sharedInstance.log.verbose("key=\(key) curentword=\(currentWord)")
+        }
         
         if let expansion = expansions[currentWord]
         {
@@ -80,7 +70,7 @@ class TextManager{
             shortcutLength = currentWord.characters.count
             expansionLength = array.count
             
-            Logger.sharedInstance.log.verbose("key=\(key)  curentword=\(currentWord) expansion=\(expansion)  expansionLength=\(expansionLength)    shortcutLength=\(shortcutLength)")
+            Logger.sharedInstance.log.verbose("key=\(key)  expansion=\(expansion)  expansionLength=\(expansionLength)    shortcutLength=\(shortcutLength)")
         
             
             var aStr = UnsafeMutablePointer<UniChar>.allocate(capacity: expansionLength)
@@ -94,16 +84,9 @@ class TextManager{
             
            aStr =  aStr.advanced(by: -array.count)
             
+          currentWord = ""
             
-            currentWord = ""
-            
-            
-           
-            
-           
-            
-             return aStr
-           
+          return aStr
         }
         
         else

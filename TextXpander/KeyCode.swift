@@ -22,7 +22,7 @@ class KeyCode{
         
  
         
-        Logger.sharedInstance.log.verbose("********** shift=\(shiftModifier) control=\(controlModifier) alt=\(altModifier) caps=\(capsModifier) ")
+        //Logger.sharedInstance.log.verbose("********** shift=\(shiftModifier) control=\(controlModifier) alt=\(altModifier) caps=\(capsModifier) ")
 
         
         if let code = keyDict[Int.init(exactly: key)!]
@@ -140,7 +140,7 @@ class KeyCode{
     //kVK_Return:
     //kVK_Tab:
     kVK_Space:  " ",
-    kVK_Delete: "del",
+    kVK_Delete: "",
    /* kVK_Escape:
     kVK_Command:  
     kVK_Shift:  
