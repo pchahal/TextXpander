@@ -36,14 +36,18 @@ class TextXpanderTests: XCTestCase {
         
         
         
-        var expansion = TextManager.sharedInstance.getTextExpansion(key: 65, modifier: flag, &length , &shortcut)
+        //var expansion = TextManager.sharedInstance.getTextExpansion(key: 65, modifier: flag, &length , &shortcut)
         
+        var par = TextManager.sharedInstance.expansions["par"]
         
+        var key = KeyCode.sharedInstance.getUnicodeFromKey(key: 65, modifier: flag)
+        let a =  TextManager.sharedInstance.expansions[key]
         
+        let k:Int64 = 65
+        let n:Int = Int.init(exactly: k)!
+        XCTAssertTrue(par == "pardeep")
+        XCTAssertTrue(a == "B")
         
-        
-        XCTAssertTrue(aStr.advanced(by: -1).pointee == 65)
-        XCTAssertTrue(aStr.pointee == 66)
         
     }
     

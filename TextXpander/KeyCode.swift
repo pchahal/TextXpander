@@ -25,7 +25,7 @@ class KeyCode{
         Logger.sharedInstance.log.verbose("********** shift=\(shiftModifier) control=\(controlModifier) alt=\(altModifier) caps=\(capsModifier) ")
 
         
-        if let code = keyDict[Int(key)]
+        if let code = keyDict[Int.init(exactly: key)!]
         {
             if (shiftModifier||capsModifier)
             {

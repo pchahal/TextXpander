@@ -2,8 +2,6 @@ import Foundation
 
 /*  TODO
 
- WED handle modifier keys shift and caps
- WED handle lowercase uppercase
  WED bug Tab and arrow key is expanding
  
  FUTURE 
@@ -28,7 +26,7 @@ class TextManager{
     
     static let sharedInstance = TextManager()
     
-    let expansions = ["ab":"ba","par":"pardeep", "cha":"chahal", "email":"pschahal@msn.com","thx":"Thank You", "ABC":"cba","A":"B"]
+    let expansions = ["ab":"ba","par":"pardeep", "cha":"chahal", "email":"pschahal@msn.com","THX":"Thank You", "ABC":"cba","A":"B"]
     var currentWord: String
     
     

@@ -16,7 +16,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         
-              //HandleKeyPressEvents()
+              HandleKeyPressEvents()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
