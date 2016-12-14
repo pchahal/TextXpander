@@ -5,8 +5,9 @@ import Foundation
 
 
  after succesful expansion send tapevent backspace*LengthOfExpansion
+ expansion cursor position wrong
  bug Tab and arrow key is expanding
- 
+ handle lowercase uppercase
  
  
  
@@ -21,7 +22,7 @@ class TextManager{
     
     static let sharedInstance = TextManager()
     
-    let expansions = ["AB":"BA","PAR":"pardeep", "cha":"chahal", "email":"pschahal@msn.com","thx":"Thank You", "ABC":"CBA"]
+    let expansions = ["ab":"ba","par":"pardeep", "cha":"chahal", "email":"pschahal@msn.com","thx":"Thank You", "abc":"cba"]
     var currentWord: String
     
     
@@ -41,7 +42,7 @@ class TextManager{
     {
 
         
-         Logger.sharedInstance.log.verbose("key=\(key)")
+        
        
         let keyStr = KeyCode.sharedInstance.getUnicodeFromKey(key: key)
         if keyStr == " "
@@ -57,6 +58,8 @@ class TextManager{
         
         
         currentWord += keyStr
+        Logger.sharedInstance.log.verbose("key=\(key) curentword=\(currentWord)")
+        
         if let expansion = expansions[currentWord]
         {
             AudioManager.sharedInstance.playSound()

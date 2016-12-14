@@ -49,7 +49,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
 
-
 func myCGEventCallback(proxy: CGEventTapProxy, type: CGEventType, event: CGEvent, refcon: UnsafeMutableRawPointer?) -> Unmanaged<CGEvent>? {
     
     if [.keyDown , .keyUp].contains(type) {
