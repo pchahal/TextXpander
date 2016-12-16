@@ -1,1 +1,33 @@
-{ "people": [{ "firstName": "Par", "lastName": "Hudson", "isAlive": true }, { "firstName": "Angela", "lastName": "Merkel", "isAlive": true }, { "firstName": "George", "lastName": "Washington", "isAlive": false } ] }
+[
+ 
+ {"shortcut":  "par",
+ "expansion": "Pardeep",
+ "label":  "Name",
+ "group":  "Group1"},
+ 
+ {"shortcut":  "ab",
+ "expansion": "BA",
+ "label":  "ab",
+ "group":  "Group1"},
+ 
+ {"shortcut":  "ABC",
+ "expansion": "CBA",
+ "label":  "alpha",
+ "group":  "Group1"},
+ 
+ {"shortcut":  "email",
+ "expansion": "pschahal@msn.com",
+ "label":  "mail",
+ "group":  "Group1"},
+
+ {"shortcut":  "THX",
+ "expansion": "Thank You",
+ "label":  "thank",
+ "group":  "Group1"},
+ 
+
+ 
+ 
+ 
+ ]
+

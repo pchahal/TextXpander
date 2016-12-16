@@ -22,7 +22,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
  
        // Preferences.sharedInstance.Print()
         
-        var snip = Snippet()
+        var snip = Snippets()
         
     }
 

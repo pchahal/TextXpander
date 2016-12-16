@@ -8,42 +8,44 @@
 
 import Foundation
 import SwiftyJSON
+import EVReflection
 
-class  Snippet
+
+class Snippet: EVObject {
+    var shortcut: String = ""
+    var expansion: String = ""
+    var label: String = ""
+    var group:  String = ""
+}
+
+
+class  Snippets
 {
+    var snippets: [Snippet] = []
     
-    var shortcut: String
-    var expansion: String
-    var label: String
-    var group:  String
-    
-    init() {
-        shortcut = ""
-        expansion = ""
-        label = ""
-        group = ""
-        
-     
+    init()
+    {
         
         if let filepath = Bundle.main.path(forResource: "Snippets", ofType: "json") {
             do {
                 let contents = try String(contentsOfFile: filepath)
-                if let data = contents.data(using: String.Encoding.utf8)
-                {
-                    let json = JSON(data: data)
-                    for item in json["people"].arrayValue {
-                        print(item["firstName"].stringValue)
-                    }
-                }
+                snippets = [Snippet](json: contents)
+                print (snippets.description)
+                               
                 
-             
             } catch {
                 // contents could not be loaded
             }
         } else {
             // example.txt not found!
         }
-        
-    
     }
+    
+    
+    
 }
+
+
+
+
+
