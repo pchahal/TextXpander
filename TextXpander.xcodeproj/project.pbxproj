@@ -10,7 +10,7 @@
 		4B1B3BF51DFF780100A91981 /* TextXpanderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B3BF41DFF780100A91981 /* TextXpanderTests.swift */; };
 		4B4C45861E0483BD00D8A90F /* TODO.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4B4C45851E0483BD00D8A90F /* TODO.txt */; };
 		4B8A976E1E009E83008207B5 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 4B8A976D1E009E83008207B5 /* Sounds */; };
-		4B91F7431DFF3DF2002AE8CE /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B91F7401DFF3DF2002AE8CE /* EventManager.swift */; };
+		4B91F7431DFF3DF2002AE8CE /* TextXpander.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B91F7401DFF3DF2002AE8CE /* TextXpander.swift */; };
 		4B91F7441DFF3DF2002AE8CE /* KeyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B91F7411DFF3DF2002AE8CE /* KeyCode.swift */; };
 		4B91F7451DFF3DF2002AE8CE /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B91F7421DFF3DF2002AE8CE /* Logger.swift */; };
 		4BBB701F1E008A6600E32B2B /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB701E1E008A6600E32B2B /* AudioManager.swift */; };
@@ -20,6 +20,7 @@
 		4BE546E41E0307F500ED4D60 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE546E31E0307F500ED4D60 /* Preferences.swift */; };
 		4BE546EC1E0376F200ED4D60 /* Snippets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE546EB1E0376F200ED4D60 /* Snippets.swift */; };
 		4BE546F01E0397A000ED4D60 /* Snippets.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BE546EF1E0397A000ED4D60 /* Snippets.json */; };
+		4BF432E01E0497BC0009C466 /* KeyboardEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF432DF1E0497BC0009C466 /* KeyboardEvents.swift */; };
 		EE9B0866E4AE76F558376ECC /* Pods_TextXpander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB462AF50B7130B7341DC56 /* Pods_TextXpander.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +41,7 @@
 		4B1B3BF61DFF780100A91981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B4C45851E0483BD00D8A90F /* TODO.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO.txt; sourceTree = "<group>"; };
 		4B8A976D1E009E83008207B5 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
-		4B91F7401DFF3DF2002AE8CE /* EventManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
+		4B91F7401DFF3DF2002AE8CE /* TextXpander.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextXpander.swift; sourceTree = "<group>"; };
 		4B91F7411DFF3DF2002AE8CE /* KeyCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyCode.swift; sourceTree = "<group>"; };
 		4B91F7421DFF3DF2002AE8CE /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		4BBB701E1E008A6600E32B2B /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
@@ -52,6 +53,7 @@
 		4BE546E31E0307F500ED4D60 /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Preferences.swift; path = ../Preferences.swift; sourceTree = "<group>"; };
 		4BE546EB1E0376F200ED4D60 /* Snippets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Snippets.swift; path = ../Snippets.swift; sourceTree = "<group>"; };
 		4BE546EF1E0397A000ED4D60 /* Snippets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Snippets.json; path = ../Snippets.json; sourceTree = "<group>"; };
+		4BF432DF1E0497BC0009C466 /* KeyboardEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardEvents.swift; path = ../KeyboardEvents.swift; sourceTree = "<group>"; };
 		DACF8F707AEB90B0DAA5EE85 /* Pods-TextXpander.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextXpander.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextXpander/Pods-TextXpander.debug.xcconfig"; sourceTree = "<group>"; };
 		F26187561AB6E33309212FC0 /* Pods-TextXpander.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextXpander.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextXpander/Pods-TextXpander.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +89,7 @@
 		4B8A97751E00EB7D008207B5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4BCE0BD41DFF2DF800562255 /* AppDelegate.swift */,
 				4BE546EF1E0397A000ED4D60 /* Snippets.json */,
 				4BCE0BD61DFF2DF800562255 /* Assets.xcassets */,
 				4BCE0BD81DFF2DF800562255 /* MainMenu.xib */,
@@ -121,10 +124,10 @@
 			isa = PBXGroup;
 			children = (
 				4B8A97751E00EB7D008207B5 /* Resources */,
-				4BCE0BD41DFF2DF800562255 /* AppDelegate.swift */,
 				4BE546EB1E0376F200ED4D60 /* Snippets.swift */,
+				4BF432DF1E0497BC0009C466 /* KeyboardEvents.swift */,
 				4BE546E31E0307F500ED4D60 /* Preferences.swift */,
-				4B91F7401DFF3DF2002AE8CE /* EventManager.swift */,
+				4B91F7401DFF3DF2002AE8CE /* TextXpander.swift */,
 				4B91F7411DFF3DF2002AE8CE /* KeyCode.swift */,
 				4B91F7421DFF3DF2002AE8CE /* Logger.swift */,
 				4BBB701E1E008A6600E32B2B /* AudioManager.swift */,
@@ -314,10 +317,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BE546E41E0307F500ED4D60 /* Preferences.swift in Sources */,
-				4B91F7431DFF3DF2002AE8CE /* EventManager.swift in Sources */,
+				4B91F7431DFF3DF2002AE8CE /* TextXpander.swift in Sources */,
 				4BE546EC1E0376F200ED4D60 /* Snippets.swift in Sources */,
 				4B91F7441DFF3DF2002AE8CE /* KeyCode.swift in Sources */,
 				4BCE0BD51DFF2DF800562255 /* AppDelegate.swift in Sources */,
+				4BF432E01E0497BC0009C466 /* KeyboardEvents.swift in Sources */,
 				4BBB701F1E008A6600E32B2B /* AudioManager.swift in Sources */,
 				4B91F7451DFF3DF2002AE8CE /* Logger.swift in Sources */,
 			);

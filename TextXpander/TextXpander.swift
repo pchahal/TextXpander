@@ -7,9 +7,9 @@
 //
 import Foundation
 
-class TextManager{
+class TextXpander{
     
-    static let sharedInstance = TextManager()
+    static let sharedInstance = TextXpander()
     var currentWord: String
     
     init()
