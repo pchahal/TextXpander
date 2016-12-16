@@ -19,7 +19,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         KeyboardEvents().HandleKeyPressEvents()
        
        // Preferences.sharedInstance.Print()
-       // Snippets.sharedInstance
+        //Snippets.sharedInstance
         
     
         

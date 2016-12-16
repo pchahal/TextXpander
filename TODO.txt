@@ -7,17 +7,30 @@
 //
 
   TODO
-set delimeters
+
+
+par 
+
+static let expandAt = DefaultsKey<expandPosition?>("expandAt")
+static let delimeters = DefaultsKey<[Int]>("delimeters")
+static let caseSensitive = DefaultsKey<Bool>("caseSensitive")
+static let capitalizeSentences = DefaultsKey<Bool>("capitalizeSentences")
+static let showInMenu = DefaultsKey<Bool>("showInMenu")
+static let hideInDock = DefaultsKey<Bool>("hideInDock")
+static let launchAtLogin = DefaultsKey<Bool>("launchAtLogin")
+
+
 
 
 FUTURE
+
 insert time
 insert date/Users/par/Desktop/Settings.textexpander
 
 Group Snippets
-GUI menus and main window editor
+main window editor
 kctranslatekey
-update software
+checkForUpdates
 
 VERSION 2.O
 drm
