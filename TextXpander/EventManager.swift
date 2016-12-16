@@ -1,15 +1,21 @@
+//
+//  EventManager.swift
+//  TextXpander
+//
+//  Created by Pardeep Chahal on 2016-12-13.
+//  Copyright © 2016 Pardeep Chahal. All rights reserved.
+//
 import Foundation
 
 /*  TODO
 
  
- 
  FUTURE 
  
  json file for snippets
- nsuserdefaults for prefs
+
  insert time
- insert date
+ insert date/Users/par/Desktop/Settings.textexpander
  set delimeters
  Group Snippets
  kctranslatekey

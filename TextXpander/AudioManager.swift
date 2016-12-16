@@ -1,5 +1,5 @@
 //
-//  SoundEffects.swift
+//  AudioManager.swift
 //  TextXpander
 //
 //  Created by Pardeep Chahal on 2016-12-13.

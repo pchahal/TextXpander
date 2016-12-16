@@ -16,7 +16,7 @@
 		4BCE0BD51DFF2DF800562255 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCE0BD41DFF2DF800562255 /* AppDelegate.swift */; };
 		4BCE0BD71DFF2DF800562255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BCE0BD61DFF2DF800562255 /* Assets.xcassets */; };
 		4BCE0BDA1DFF2DF800562255 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BCE0BD81DFF2DF800562255 /* MainMenu.xib */; };
-		4BE546DF1E020B9100ED4D60 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE546DE1E020B9100ED4D60 /* Preferences.swift */; };
+		4BE546E41E0307F500ED4D60 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE546E31E0307F500ED4D60 /* Preferences.swift */; };
 		EE9B0866E4AE76F558376ECC /* Pods_TextXpander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB462AF50B7130B7341DC56 /* Pods_TextXpander.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +45,7 @@
 		4BCE0BD61DFF2DF800562255 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BCE0BD91DFF2DF800562255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4BCE0BDB1DFF2DF800562255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4BE546DE1E020B9100ED4D60 /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Preferences.swift; path = ../Preferences.swift; sourceTree = "<group>"; };
+		4BE546E31E0307F500ED4D60 /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Preferences.swift; path = ../Preferences.swift; sourceTree = "<group>"; };
 		DACF8F707AEB90B0DAA5EE85 /* Pods-TextXpander.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextXpander.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextXpander/Pods-TextXpander.debug.xcconfig"; sourceTree = "<group>"; };
 		F26187561AB6E33309212FC0 /* Pods-TextXpander.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextXpander.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextXpander/Pods-TextXpander.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,11 +114,11 @@
 			children = (
 				4B8A97751E00EB7D008207B5 /* Resources */,
 				4BCE0BD41DFF2DF800562255 /* AppDelegate.swift */,
+				4BE546E31E0307F500ED4D60 /* Preferences.swift */,
 				4B91F7401DFF3DF2002AE8CE /* EventManager.swift */,
 				4B91F7411DFF3DF2002AE8CE /* KeyCode.swift */,
 				4B91F7421DFF3DF2002AE8CE /* Logger.swift */,
 				4BBB701E1E008A6600E32B2B /* AudioManager.swift */,
-				4BE546DE1E020B9100ED4D60 /* Preferences.swift */,
 			);
 			path = TextXpander;
 			sourceTree = "<group>";
@@ -302,10 +302,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BE546E41E0307F500ED4D60 /* Preferences.swift in Sources */,
 				4B91F7431DFF3DF2002AE8CE /* EventManager.swift in Sources */,
 				4B91F7441DFF3DF2002AE8CE /* KeyCode.swift in Sources */,
 				4BCE0BD51DFF2DF800562255 /* AppDelegate.swift in Sources */,
-				4BE546DF1E020B9100ED4D60 /* Preferences.swift in Sources */,
 				4BBB701F1E008A6600E32B2B /* AudioManager.swift in Sources */,
 				4B91F7451DFF3DF2002AE8CE /* Logger.swift in Sources */,
 			);
