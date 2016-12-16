@@ -1,0 +1,1 @@
+{ "people": [{ "firstName": "Par", "lastName": "Hudson", "isAlive": true }, { "firstName": "Angela", "lastName": "Merkel", "isAlive": true }, { "firstName": "George", "lastName": "Washington", "isAlive": false } ] }

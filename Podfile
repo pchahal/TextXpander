@@ -8,4 +8,5 @@ target 'TextXpander' do
   # Pods for TextXpander
 pod 'SwiftyBeaver'
 pod 'SwiftyUserDefaults'
+pod 'SwiftyJSON'
 end

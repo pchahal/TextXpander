@@ -9,11 +9,9 @@ import Foundation
 
 /*  TODO
 
+
  
  FUTURE 
- 
- json file for snippets
-
  insert time
  insert date/Users/par/Desktop/Settings.textexpander
  set delimeters

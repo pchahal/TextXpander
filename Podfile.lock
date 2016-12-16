@@ -1,15 +1,18 @@
 PODS:
   - SwiftyBeaver (1.1.1)
+  - SwiftyJSON (3.1.3)
   - SwiftyUserDefaults (3.0.0)
 
 DEPENDENCIES:
   - SwiftyBeaver
+  - SwiftyJSON
   - SwiftyUserDefaults
 
 SPEC CHECKSUMS:
   SwiftyBeaver: 2b68694df862381235e32bcfc4ec991e26bf131d
+  SwiftyJSON: 38a8ea2006779c0fc4c310cb2ee8195327740faf
   SwiftyUserDefaults: 0f1d45fc3aafb9064dac661e367f8f83fe21a4b4
 
-PODFILE CHECKSUM: 792b5bb4898dd5af8ece29672d1280716db7589b
+PODFILE CHECKSUM: 5a5ce85c594fbb3679ff7497f0e8c405e872f6e8
 
 COCOAPODS: 1.1.1

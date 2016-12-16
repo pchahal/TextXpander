@@ -17,9 +17,6 @@ extension DefaultsKeys {
     static let playSound = DefaultsKey<Bool>("playSound")
     static let expandAt = DefaultsKey<expandPosition?>("expandAt")
     static let delimeters = DefaultsKey<[Int]>("delimeters")
-    
-    
-    
     static let caseSensitive = DefaultsKey<Bool>("caseSensitive")
     static let capitalizeSentences = DefaultsKey<Bool>("capitalizeSentences")
     static let showInMenu = DefaultsKey<Bool>("showInMenu")
