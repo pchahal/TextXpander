@@ -12,6 +12,7 @@ import EVReflection
 
 
 class Snippet: EVObject {
+    var id: String = UUID().uuidString
     var shortcut: String = ""
     var expansion: String = ""
     var label: String = ""
@@ -21,18 +22,16 @@ class Snippet: EVObject {
 
 class  Snippets
 {
-    var snippets: [Snippet] = []
+    private var snippets: [Snippet] = []
+    var snippetsDict : [String: Snippet] = [:]    
     
     init()
     {
-        
         if let filepath = Bundle.main.path(forResource: "Snippets", ofType: "json") {
             do {
                 let contents = try String(contentsOfFile: filepath)
                 snippets = [Snippet](json: contents)
-                print (snippets.description)
-                               
-                
+                snippetsDict = createDictionaryOfSnippets(snippetsArray: snippets)
             } catch {
                 // contents could not be loaded
             }
@@ -42,7 +41,18 @@ class  Snippets
     }
     
     
-    
+    func createDictionaryOfSnippets(snippetsArray: [Snippet]) -> [String:Snippet]
+    {
+        var dict : [String:Snippet] = [:]
+        //snippetsDict.removeAll()
+        for snippet in snippetsArray
+        {
+            dict[snippet.shortcut] = snippet
+        }
+        
+        print(dict)
+        return dict
+    }
 }
 
 

@@ -16,13 +16,14 @@ import Foundation
  insert date/Users/par/Desktop/Settings.textexpander
  set delimeters
  Group Snippets
+ GUI menus and main window editor
  kctranslatekey
  update software
  
  VERSION 2.O
+ drm
  sort snippets
  filter snippets
- drm
  expansions in select apps
  iCloud sync
  image support
