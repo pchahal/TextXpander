@@ -22,6 +22,8 @@ class Snippet: EVObject {
 
 class  Snippets
 {
+    static let sharedInstance = Snippets()
+
     private var snippets: [Snippet] = []
     var snippetsDict : [String: Snippet] = [:]    
     
@@ -48,9 +50,7 @@ class  Snippets
         for snippet in snippetsArray
         {
             dict[snippet.shortcut] = snippet
-        }
-        
-        print(dict)
+        }        
         return dict
     }
 }

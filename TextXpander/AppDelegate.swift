@@ -16,13 +16,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         
-           // HandleKeyPressEvents()
+            //HandleKeyPressEvents()
        
-        
- 
+     
        // Preferences.sharedInstance.Print()
         
-        var snip = Snippets()
+        Snippets.sharedInstance
+        
+    
         
     }
 

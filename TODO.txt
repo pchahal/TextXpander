@@ -1,0 +1,32 @@
+//
+//  TODO.txt
+//  TextXpander
+//
+//  Created by Pardeep Chahal on 2016-12-16.
+//  Copyright © 2016 Pardeep Chahal. All rights reserved.
+//
+
+  TODO
+set delimeters
+
+
+FUTURE
+insert time
+insert date/Users/par/Desktop/Settings.textexpander
+
+Group Snippets
+GUI menus and main window editor
+kctranslatekey
+update software
+
+VERSION 2.O
+drm
+sort snippets
+filter snippets
+expansions in select apps
+iCloud sync
+image support
+emoji
+dictation
+
+

@@ -7,38 +7,10 @@
 //
 import Foundation
 
-/*  TODO
-
-
- 
- FUTURE 
- insert time
- insert date/Users/par/Desktop/Settings.textexpander
- set delimeters
- Group Snippets
- GUI menus and main window editor
- kctranslatekey
- update software
- 
- VERSION 2.O
- drm
- sort snippets
- filter snippets
- expansions in select apps
- iCloud sync
- image support
- emoji
- dictation
-*/
-
-
 class TextManager{
     
     static let sharedInstance = TextManager()
-    
-    let expansions = ["ab":"ba","par":"pardeep", "cha":"chahal", "email":"pschahal@msn.com","THX":"Thank You", "ABC":"cba","A":"B"]
     var currentWord: String
-    
     
     init()
     {
@@ -68,7 +40,7 @@ class TextManager{
             Logger.sharedInstance.log.verbose("key=\(key) curentword=\(currentWord)")
         }
         
-        if let expansion = expansions[currentWord]
+        if let expansion = Snippets.sharedInstance.snippetsDict[currentWord]?.expansion
         {
             AudioManager.sharedInstance.playSound()
             let array: [UInt16] = Array(expansion.utf16)
