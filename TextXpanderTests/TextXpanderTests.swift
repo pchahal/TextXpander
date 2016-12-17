@@ -22,43 +22,15 @@ class TextXpanderTests: XCTestCase {
     }
     
     
-    //AB -> BA
-    func testExample() {
         
-        var aStr = UnsafeMutablePointer<UniChar>.allocate(capacity: 2)
-        aStr.initialize(to: 65)
-        aStr = aStr.advanced(by: 1)
-        aStr.initialize(to: 66)
-        
-        var length = 0
-        var shortcut = 0
-        var flag = CGEventFlags(rawValue: 0)
-        
-        
-        
-        //var expansion = TextManager.sharedInstance.getTextExpansion(key: 65, modifier: flag, &length , &shortcut)
-        
-        var par = TextManager.sharedInstance.expansions["par"]
-        
-        var key = KeyCode.sharedInstance.getUnicodeFromKey(key: 65, modifier: flag)
-        let a =  TextManager.sharedInstance.expansions[key]
-        
-        let k:Int64 = 65
-        let n:Int = Int.init(exactly: k)!
-        XCTAssertTrue(par == "pardeep")
-        XCTAssertTrue(a == "B")
-        
-        
-    }
-    
     func testDelKey()
     {
-        let a =  KeyCode.sharedInstance.isDelKey(key: 51)
+        let a =  KeyCodeMap.sharedInstance.isDelKey(key: 51)
         XCTAssertTrue(a == true)
     }
     func testDelimeterKey()
     {
-        let a =  KeyCode.sharedInstance.isDelimeterKey(key: 49)
+        let a =  KeyCodeMap.sharedInstance.isDelimeterKey(keyStr: " ")
         XCTAssertTrue(a == true)
     }
     

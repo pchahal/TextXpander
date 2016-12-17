@@ -20,16 +20,16 @@ class TextXpander{
     
     func getTextExpansion(key: Int64, modifier: CGEventFlags, _ expansionLength: inout Int, _ shortcutLength: inout Int) -> UnsafeMutablePointer<UniChar>?
     {
-    let keyStr = KeyCode.sharedInstance.getUnicodeFromKey(key: key, modifier: modifier)
+    let keyStr = KeyCodeMap.sharedInstance.getUnicodeFromKey(key: key, modifier: modifier)
         currentWord += keyStr
         
-        if KeyCode.sharedInstance.isDelimeterKey(key: key)
+        if KeyCodeMap.sharedInstance.isDelimeterKey(keyStr: keyStr)
         {
             currentWord = ""
             Logger.sharedInstance.log.verbose("key=\(key) curentword=\(currentWord)")
             return nil
         }
-        else if KeyCode.sharedInstance.isDelKey(key: key) && currentWord.characters.count > 0
+        else if KeyCodeMap.sharedInstance.isDelKey(key: key) && currentWord.characters.count > 0
         {
             currentWord.remove(at: currentWord.index(before: currentWord.endIndex))
             Logger.sharedInstance.log.verbose("key=\(key) curentword=\(currentWord)")

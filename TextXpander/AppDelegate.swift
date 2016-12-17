@@ -16,7 +16,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         
-        KeyboardEvents().HandleKeyPressEvents()
+       KeyboardEvents().HandleKeyPressEvents()
        
        // Preferences.sharedInstance.Print()
         //Snippets.sharedInstance
@@ -26,7 +26,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
+        // Insert code here to tear down your applicationPardeep pschahal@msn.com sfepar Pardeep
     }
 
     

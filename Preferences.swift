@@ -16,7 +16,7 @@ extension DefaultsKeys {
     static let expandAbbreviations = DefaultsKey<Bool>("expandAbbreviations")
     static let playSound = DefaultsKey<Bool>("playSound")
     static let expandAt = DefaultsKey<expandPosition?>("expandAt")
-    static let delimeters = DefaultsKey<[Int]>("delimeters")
+    static let delimeters = DefaultsKey<[String]>("delimeters")
     static let caseSensitive = DefaultsKey<Bool>("caseSensitive")
     static let capitalizeSentences = DefaultsKey<Bool>("capitalizeSentences")
     static let showInMenu = DefaultsKey<Bool>("showInMenu")
@@ -77,12 +77,12 @@ class Preferences {
             Defaults[.expandAt] = newValue
         }
     }
-    var delimeters:  [Int]
+    var delimeters:  [String]
     {
         get {
             if  !Defaults.hasKey(.delimeters)
             {
-                Defaults[.delimeters] = [kVK_Space,kVK_Tab]
+                Defaults[.delimeters] = [" ", "\t", "\n"]
                 return Defaults[.delimeters]
             }
             else

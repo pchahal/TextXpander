@@ -10,8 +10,8 @@ import Foundation
 import Carbon.HIToolbox
 
 
-class KeyCode{
-    static let sharedInstance = KeyCode()
+class KeyCodeMap{
+    static let sharedInstance = KeyCodeMap()
     
     func getUnicodeFromKey(key: Int64, modifier: CGEventFlags) -> String{
         
@@ -54,19 +54,18 @@ class KeyCode{
         }
     }
     
-    func isDelimeterKey(key: Int64) -> Bool
+    func isDelimeterKey(keyStr: String) -> Bool
     {
-        if Int(key) == kVK_Space
-        {
-            return true
-        }
-        else
-        {
-            return false
-        }
+        
+        let value = Preferences.sharedInstance.delimeters.contains(keyStr)
+        return value;
+    
     }
-
-
+    let availableDelimeters = [" ","RETURN", "\n", "\t", "ESC", ".", "!", "?",
+                               ",",";",":","-","\"","'","(",")","{","}","[",
+                               "%","^","#","_","@","$","`","|","~"]
+    
+    
     let keyDict = [
         kVK_ANSI_A: "a",
         kVK_ANSI_S: "s",
@@ -137,12 +136,12 @@ class KeyCode{
         //
     /* keycodes for keys that are independent of keyboard layout*/
     
-    //kVK_Return:
-    //kVK_Tab:
+    kVK_Return:"\n",
+    kVK_Tab:    "\t",
     kVK_Space:  " ",
     kVK_Delete: "",
-   /* kVK_Escape:
-    kVK_Command:  
+    kVK_Escape: "",
+    /*kVK_Command:
     kVK_Shift:  
     kVK_CapsLock:  
     kVK_Option:  
