@@ -15,6 +15,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let statusItem = NSStatusBar.system().statusItem(withLength: -2)
     @IBOutlet weak var window: NSWindow!
 
+   
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         
         
@@ -42,21 +43,28 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         let menu = NSMenu()
         
-        menu.addItem(NSMenuItem(title: "Print Quote", action: Selector(("printQuote:")), keyEquivalent: "P"))
+        
+        menu.addItem(NSMenuItem(title: "Print Quote", action: #selector(AppDelegate.printQuote), keyEquivalent: "P"))
         menu.addItem(NSMenuItem.separator())
-        menu.addItem(NSMenuItem(title: "Quit Quotes", action: Selector(("quit:")), keyEquivalent: "q"))
+        menu.addItem(NSMenuItem(title: "Quit Quotes", action: #selector(AppDelegate.quit), keyEquivalent: "q"))
         
         statusItem.menu = menu
 
     }
-    func printQuote(sender: AnyObject) {
+    func printQuote() {
         let quoteText = "Never put off until tomorrow what you can do the day after tomorrow."
         let quoteAuthor = "Mark Twain"
         
         print("\(quoteText) — \(quoteAuthor)")
+        
+        window.makeKeyAndOrderFront(nil)
+        NSApp.activate(ignoringOtherApps: true)
+        
+        
+        
     }
     
-    func quit(sender:AnyObject)
+    func quit()
     {
          NSApplication.shared().terminate(self)
     }
