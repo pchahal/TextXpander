@@ -12,11 +12,15 @@ import SwiftyBeaver
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+    let statusItem = NSStatusBar.system().statusItem(withLength: -2)
     @IBOutlet weak var window: NSWindow!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         
-       KeyboardEvents().HandleKeyPressEvents()
+        
+        AddMenu()
+        
+      // KeyboardEvents().HandleKeyPressEvents()
        
        // Preferences.sharedInstance.Print()
         //Snippets.sharedInstance
@@ -30,4 +34,31 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     
+    func AddMenu()
+    {
+        if let button = statusItem.button {
+            button.image = NSImage(named: "StatusBarButtonImage")
+            button.action = Selector(("printQuote:"))
+        }
+        let menu = NSMenu()
+        
+        menu.addItem(NSMenuItem(title: "Print Quote", action: Selector(("printQuote:")), keyEquivalent: "P"))
+        menu.addItem(NSMenuItem.separator())
+        menu.addItem(NSMenuItem(title: "Quit Quotes", action: Selector(("quit:")), keyEquivalent: "q"))
+        
+        statusItem.menu = menu
+
+    }
+    func printQuote(sender: AnyObject) {
+        let quoteText = "Never put off until tomorrow what you can do the day after tomorrow."
+        let quoteAuthor = "Mark Twain"
+        
+        print("\(quoteText) — \(quoteAuthor)")
+    }
+    
+    func quit(sender:AnyObject)
+    {
+         NSApplication.shared().terminate(self)
+    }
+
 }

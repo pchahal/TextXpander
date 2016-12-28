@@ -16,8 +16,8 @@ class KeyCodeMap{
     func getUnicodeFromKey(key: Int64, modifier: CGEventFlags) -> String{
         
         let shiftModifier = modifier.contains(CGEventFlags.maskShift)
-        let controlModifier = modifier.contains(CGEventFlags.maskControl)
-        let altModifier = modifier.contains(CGEventFlags.maskAlternate)
+        _ = modifier.contains(CGEventFlags.maskControl)
+        _ = modifier.contains(CGEventFlags.maskAlternate)
         let capsModifier = modifier.contains(CGEventFlags.maskAlphaShift)
         
  
