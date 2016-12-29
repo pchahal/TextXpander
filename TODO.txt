@@ -9,6 +9,10 @@
 TODO
 
 
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> 674a64ac6b4ff4987bee46b133b0ec47df8cd59b
 
 popup caseSensitive needs programmatic items
 Save gui changes to preferences JSON file
