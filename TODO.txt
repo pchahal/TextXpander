@@ -6,11 +6,12 @@
 //  Copyright © 2016 Pardeep Chahal. All rights reserved.
 //
 
-  TODO
+TODO
 
 
-par 
 
+popup caseSensitive needs programmatic items
+Save gui changes to preferences JSON file
 static let expandAt = DefaultsKey<expandPosition?>("expandAt")
 static let delimeters = DefaultsKey<[Int]>("delimeters")
 static let caseSensitive = DefaultsKey<Bool>("caseSensitive")
@@ -21,12 +22,10 @@ static let launchAtLogin = DefaultsKey<Bool>("launchAtLogin")
 
 
 FUTURE
-
+TextXpander window editor
 insert time
 insert date/Users/par/Desktop/Settings.textexpander
-
 Group Snippets
-main window editor
 kctranslatekey
 checkForUpdates
 

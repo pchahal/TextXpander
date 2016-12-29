@@ -763,7 +763,7 @@
                                                             <font key="font" metaFont="systemBold" size="12"/>
                                                         </buttonCell>
                                                     </button>
-                                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kbM-ds-sEV">
+                                                    <button verticalHuggingPriority="750" fixedFrame="YES" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kbM-ds-sEV">
                                                         <rect key="frame" x="13" y="98" width="50" height="19"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         <buttonCell key="cell" type="recessed" title="space" bezelStyle="recessed" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ahb-ta-zHD">
