@@ -13,7 +13,8 @@ import SwiftyBeaver
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     let statusItem = NSStatusBar.system().statusItem(withLength: -2)
-    @IBOutlet weak var window: NSWindow!
+    var mainWindowController: MainWindowController? = nil
+    // @IBOutlet weak var window: NSWindow!
 
    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
@@ -57,8 +58,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         print("\(quoteText) — \(quoteAuthor)")
         
-        window.makeKeyAndOrderFront(nil)
-        NSApp.activate(ignoringOtherApps: true)
+        //window.makeKeyAndOrderFront(nil)
+        //NSApp.activate(ignoringOtherApps: true)
+        mainWindowController = MainWindowController()
+        mainWindowController?.showWindow(nil)
         
         
         
